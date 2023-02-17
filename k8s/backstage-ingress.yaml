@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: "true"
+  generation: 1
+  name: backstage
+spec:
+  ingressClassName: backstage-nginx-class
+  rules:
+  - host: zf.backstage.new.trainings.nvtc.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: backstage
+            port:
+              number: 7007
+        path: / #argocd(/|$)(.*)
+        pathType: Prefix
+  tls:
+  - hosts:
+    - zf.backstage.new.trainings.nvtc.io
+    secretName: backstage-secret

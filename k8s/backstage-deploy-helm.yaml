@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-release-backstage
+  namespace: "backstage"
+spec:
+  replicas: 1
+  template:
+    metadata:
+    spec:
+      serviceAccountName: default
+      volumes:
+      containers:
+        - name: backstage-backend
+          image: ghcr.io/backstage/backstage:latest
+          imagePullPolicy: "Always"
+          command:
+            - node
+            - packages/backend
+          args:
+          env:
+            - name: APP_CONFIG_backend_listen_port
+              value: "7007"
+          ports:
+            - name: backend
+              containerPort: 7007
+              protocol: TCP
