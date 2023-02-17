@@ -208,7 +208,26 @@
     "@backstage/plugin-user-settings-backend": "0.1.6",
     "@backstage/plugin-vault": "0.1.9",
     "@backstage/plugin-vault-backend": "0.2.8",
-    "@backstage/plugin-xcmetrics": "0.2.35"
+    "@backstage/plugin-xcmetrics": "0.2.35",
+    "@backstage/plugin-stackstorm": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "create-app-1676645201",
+    "eighty-geese-return",
+    "gentle-pears-clean",
+    "new-jobs-deny",
+    "nice-planets-wave",
+    "ninety-turtles-wait",
+    "old-foxes-shave",
+    "polite-chicken-do",
+    "polite-falcons-jump",
+    "quick-tables-listen",
+    "rare-buses-swim",
+    "slimy-lobsters-kneel",
+    "spotty-bees-tell",
+    "spotty-wasps-complain",
+    "swift-bags-wave",
+    "ten-tigers-marry",
+    "twenty-jeans-speak"
+  ]
 }
