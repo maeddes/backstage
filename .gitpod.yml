@@ -4,8 +4,8 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
-tasks:
-  - init: yarn install
-    command: yarn run start
+#tasks:
+#  - init: yarn install
+#ncdu    command: yarn run start
 
 
